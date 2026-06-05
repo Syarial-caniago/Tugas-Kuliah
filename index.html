@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | SITTA</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="login-body">
+
+  <!-- ===== LOGIN CARD ===== -->
+  <main class="login-container animate__animated animate__fadeIn">
+
+    <!-- LOGO -->
+    <div class="logo-wrapper">
+      <img 
+        src="img/logo_ut.png" 
+        alt="Logo SITTA" 
+        class="logo-sitta-login"
+      />
+    </div>
+
+    <!-- TITLE -->
+    <header class="login-header">
+      <h2>SITTA</h2>
+      <p class="subtitle">
+        Sistem Informasi Tracking & Transaksi Ajar
+      </p>
+    </header>
+
+    <!-- FORM -->
+    <form id="loginForm" class="login-form">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="Masukkan email"
+          autocomplete="off"
+          required 
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          placeholder="Masukkan password"
+          required 
+        />
+      </div>
+
+      <button type="submit" class="btn-login">
+        Login
+      </button>
+
+      <!-- OPTIONS -->
+      <div class="login-options">
+        <a href="#" id="forgotPassword">Lupa Password?</a>
+        <a href="#" id="register">Daftar</a>
+      </div>
+
+    </form>
+
+  </main>
+
+  <!-- ===== MODAL: LUPA PASSWORD ===== -->
+  <div id="modalForgot" class="modal">
+    <div class="modal-content animate__animated animate__zoomIn">
+      <span class="close">&times;</span>
+      <h3>Lupa Password</h3>
+      <p>Silakan hubungi admin SITTA untuk reset password Anda.</p>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: REGISTER ===== -->
+  <div id="modalRegister" class="modal">
+    <div class="modal-content animate__animated animate__zoomIn">
+      <span class="close">&times;</span>
+      <h3>Daftar Akun Baru</h3>
+      <p>Pendaftaran akun hanya dilakukan oleh admin.</p>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

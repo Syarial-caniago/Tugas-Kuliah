@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracking Pengiriman | SITTA</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICON -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="tracking-body">
+
+  <!-- ===== CONTAINER ===== -->
+  <main class="tracking-container">
+
+    <!-- TITLE -->
+    <h1>
+      <i class="fas fa-truck"></i>
+      Tracking Pengiriman
+    </h1>
+
+    <!-- FORM -->
+    <div class="tracking-form">
+      <input
+        type="text"
+        id="inputDO"
+        placeholder="Masukkan Nomor Delivery Order (DO)"
+      />
+      <button type="button" id="btnCari">Cari</button>
+    </div>
+
+    <!-- RESULT -->
+    <section id="trackingResult" class="tracking-result"></section>
+
+    <!-- BACK BUTTON -->
+    <button
+      class="back-btn"
+      onclick="window.location.href='dashboard.html'"
+    >
+      <i class="fas fa-arrow-left"></i>
+      Kembali ke Dashboard
+    </button>
+
+  </main>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

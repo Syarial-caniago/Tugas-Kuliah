@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Bahan Ajar | SITTA</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body class="stok-body">
+    <div class="stok-container">
+      <h1><i class="fas fa-book"></i> Informasi Bahan Ajar</h1>
+
+      <table id="tabelStok">
+        <thead>
+          <tr>
+            <th>Kode Lokasi</th>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Jenis</th>
+            <th>Edisi</th>
+            <th>Stok</th>
+            <th>Cover</th>
+          </tr>
+        </thead>
+        <tbody id="tabelBody"></tbody>
+      </table>
+
+<button class="add-btn" id="btnTambah">
+  <i class="fas fa-plus-circle"></i> Tambah Data
+</button>
+
+<button class="back-btn" id="btnBack">
+  <i class="fas fa-arrow-left"></i> Kembali ke Dashboard
+</button>
+    </div>
+
+    <!-- 🟦 Modal Tambah Data -->
+<!-- MODAL -->
+<div id="modalForm" class="modal">
+  <div class="modal-content">
+    
+    <span class="closeModalForm" id="closeModal">&times;</span>
+
+    <h2>Tambah Data Bahan Ajar</h2>
+
+    <form id="formTambah">
+      <input type="text" id="kodeLokasi" placeholder="Kode Lokasi" required />
+      <input type="text" id="kodeBarang" placeholder="Kode Barang" required />
+      <input type="text" id="namaBarang" placeholder="Nama Barang" required />
+      <input type="text" id="jenisBarang" placeholder="Jenis Barang" required />
+      <input type="text" id="edisi" placeholder="Edisi" required />
+      <input type="number" id="stok" placeholder="Jumlah Stok" min="0" required />
+
+      <button type="submit" class="save-btn">Simpan</button>
+    </form>
+
+  </div>
+</div>
+<!-- IMAGE MODAL -->
+<div id="imgModal" class="img-modal">
+  <span class="close-img" onclick="closeImage()">&times;</span>
+  <img id="imgPreview" class="img-preview" />
+</div>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | SITTA</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- ICON -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- ALERT -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <!-- ===== HEADER ===== -->
+    <header class="dashboard-header">
+      <div class="header-left">
+        <img src="img/logo_ut.png" alt="Logo SITTA" class="logo-sitta" />
+        <h1 id="greeting">Selamat datang!</h1>
+         <p id="subGreeting" class="sub-greeting"></p>
+      </div>
+
+      <button id="logoutBtn" class="btn-logout">Logout</button>
+    </header>
+
+   <main>
+  <h2>Menu Utama</h2>
+
+  <div class="menu-item">
+
+    <!-- MENU 1 -->
+    <div class="menu-card" id="menuStok">
+      <i class="fas fa-book"></i>
+      <span>Informasi Bahan Ajar</span>
+    </div>
+
+    <!-- MENU 2 -->
+    <div class="menu-card" id="menuTracking">
+      <i class="fas fa-truck"></i>
+      <span>Tracking Pengiriman</span>
+    </div>
+
+    <!-- MENU LAPORAN -->
+    <div class="menu-card laporan" id="menuLaporan">
+      <i class="fas fa-chart-line"></i>
+      <span>Laporan</span>
+
+      <!-- DROPDOWN -->
+      <div id="dropdownLaporan" class="dropdown">
+
+        <div class="dropdown-item" id="laporanMonitoring">
+        <i class="fas fa-desktop"></i>
+          Monitoring Progress DO Bahan Ajar
+        </div>
+
+        <div class="dropdown-item" id="laporanRekap">
+            <i class="fas fa-clipboard-list"></i>
+          Rekap Bahan Ajar
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MENU HISTORI -->
+    <div class="menu-card" id="menuHistori">
+      <i class="fas fa-clock-rotate-left"></i>
+      <span>Histori Transaksi Bahan Ajar</span>
+    </div>
+
+  </div>
+</main>
+  <!-- ===== SCRIPT ===== -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
