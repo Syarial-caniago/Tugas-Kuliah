@@ -1,4 +1,4 @@
-# Tugas-Kuliah
+# Tugas 1 Pemrograman Berbasis Web
 Pada Project kali ini adalah penyelesaian Tugas Kuliah Mata Kuliah praktik UT
 
 Dibawah ini adalah struktur folder dari tugas 1
